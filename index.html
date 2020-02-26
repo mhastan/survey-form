@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>particles.js</title>
+    <meta
+      name="description"
+      content="A survey form made for freecodecamp project 2 by M Hastan."
+    />
+    <meta name="author" content="M Hastan" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Nerd survey</h1>
+        <p id="description" class="description text-center">
+          We zouden graag meer te weten willen komen over onze gebruikers,
+          invullen word op prijs gesteld
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name: </label>
+          <input
+            type="text"
+            name="username"
+            id="name"
+            placeholder="Enter name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label"> Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Leeftijd<span class="clue">(optioneel)</span></label
+          >
+          <input
+            type="number"
+            name="leeftijd"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Leeftijd"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>Meest favoriete programmeertaal?</p>
+          <select
+            id="dropdown"
+            name="programmeertalen"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>Selecteer programmeertaal</option>
+
+            <option value="C"> C / C# / C++/ </option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="PHP">PHP</option>
+            <option value="Ruby">Ruby</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Favoriete besturingsysteem?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Linux"
+              type="radio"
+              class="input-radio"
+              checked
+            />Linux
+          </label>
+
+          <label>
+            <input
+              name="user-recommend"
+              value="Arch"
+              type="radio"
+              class="input-radio"
+            />Arch Linux
+          </label>
+
+          <label>
+            <input
+              name="user-recommend"
+              value="OSX"
+              type="radio"
+              class="input-radio"
+            />OSX
+          </label>
+
+          <label>
+            <input
+              name="user-recommend"
+              value="Winblows"
+              type="radio"
+              class="input-radio"
+            />Winblows
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Wat zou je nog graag willen leren?
+            <span class="vraag">(Je kunt ze aanvinken)</span>
+          </p>
+
+          <label>
+            <input
+              name="keuze"
+              value="datascience"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Ik zou graag meer willen leren over datascience
+          </label>
+
+          <label>
+            <input
+              name="keuze"
+              value="security"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Ik zou graag meer willen leren over websecurity.
+          </label>
+
+          <label>
+            <input
+              name="keuze"
+              value="AI"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Ik zou graag meer willen leren over Artificial Intelligence
+          </label>
+
+          <label>
+            <input
+              name="keuze"
+              value="development"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Ik zou graag meer willen leren over frontend & backend development.
+          </label>
+
+          <label>
+            <input
+              name="keuze"
+              value="alles"
+              type="checkbox"
+              class="input-checkbox"
+            />
+            Ik zou graag meer willen leren over alles wat hierboven genoemd is.
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Heb je een idee over wat er beter kan?</p>
+
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Graag uitgebreid uitleggen."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
